@@ -1,0 +1,166 @@
+# default config.yml
+#################################################
+# \/\/\/\/ This is all you should really care about!
+#Cards:
+#  List:
+#  - Pikachu
+#  - Pika
+#  Rarity:
+#    Common:
+#    - Pikachu
+#    Uncommon:
+#    - Pika
+#  defaults:   # After creating cards, this is a list of cards that will automatically show up in a players binder
+#  - Pikachu
+#  - Pika
+#################################################
+debug: false
+
+
+# When dueling, whether or not the winner should get the losers card
+wincard: true
+
+# What item should be used for the cards
+Card: PAPER
+
+Reward:
+  # How often all online players should be given a card (Minutes)
+  Time: 60
+  # What rarities of card may be given
+  Rarity:
+  - Common~100
+# When using programmed crafting item, this rarity of card should be crafted
+# You can add say Apple and a rarity and then can use Apples to craft
+# You MUST make the first letter capital and the following lowercase
+Crafting:
+  Leather: Common
+  Iron_ingot: Uncommon
+  Gold_ingot: Rare
+  Diamond: Ultra-Rare
+# % out of 100 that a card will drop from the mob, and then what type of mob will drop what rarity of card.
+Drops:
+  Hostile:
+    Chance: 5
+    BLAZE: Ultra-Rare
+    CAVE_SPIDER: Uncommon
+    CREEPER: Rare
+    GHAST: Ultra-Rare
+    MAGMA_CUBE: Rare
+    SILVERFISH: Uncommon
+    SKELETON: Common
+    SLIME: Uncommon
+    SPIDER: Common
+    WITCH: Ultra-Rare
+    WITHER_SKELETON: Rare
+    ZOMBIE: Common
+  Neutral:
+    Chance: 10
+    ENDERMAN: Rare
+    PIG_ZOMBIE: Uncommon
+    WOLF: Uncommon
+  Passive:
+    Chance: 3
+    BAT: Uncommon
+    CHICKEN: Common
+    COW: Common
+    MUSHROOM_COW: Rare
+    PIG: Common
+    SHEEP: Common
+    SQUID: Common
+    VILLAGER: Common
+  Bosses:
+    Chance: 100
+    ENDER_DRAGON: Ultra-Rare
+    WITHER: Ultra-Rare
+# DEFAULT CARDS, You can add to this for your own cards or use the in-game commands!
+Cards:
+  List:
+  - Ponyta
+  - Charmander
+  - Beldum
+  - Pidgey
+  - Regigigas
+  - Gyarados
+  - Seel
+  - Pikachu
+  - Kabutops
+  Rarity:
+    Common:
+    - Ponyta
+    - Charmander
+    - Pidgey
+    - Seel
+    - Pikachu
+    Rare:
+    - Regigigas
+    Ultra-Rare:
+    - Gyarados
+    Uncommon:
+    - Beldum
+  Ponyta:
+    Type: Fire
+    Series: 2007
+    ATK: '30'
+    DEF: '60'
+    Rarity: Common
+    Details: A Basic Fire Pokemon
+  Charmander:
+    Type: Fire
+    Series: 2008
+    ATK: '30'
+    DEF: '50'
+    Rarity: Common
+    Details: A Basic Fire Pokemon
+  Beldum:
+    Type: Metal
+    Series: 2007
+    ATK: '30'
+    DEF: '50'
+    Rarity: Uncommon
+    Details: A Basic Metal Pokemon
+  Pidgey:
+    Type: Normal
+    Series: 2007
+    ATK: '20'
+    DEF: '50'
+    Rarity: Common
+    Details: A Basic Normal Pokemon
+  Regigigas:
+    Type: Normal
+    Series: 2008
+    ATK: '60'
+    DEF: '100'
+    Rarity: Rare
+    Details: A Rare Normal Pokemon
+  Gyarados:
+    Type: Water
+    Series: 2006
+    ATK: '80'
+    DEF: '90'
+    Rarity: Ultra-Rare
+    Details: A Ultra-Rare Water Pokemon, Weak to electricity
+  Seel:
+    Type: Water
+    Series: 1995
+    ATK: '10'
+    DEF: '60'
+    Rarity: Common
+    Details: A Basic Water Pokemon
+  Pikachu:
+    Type: Electricity
+    Series: 2008
+    ATK: '40'
+    DEF: '70'
+    Rarity: Common
+    Details: A Basic Electric Pokemon
+  Kabutops:
+    Type: Electricity
+    Series: 2006
+    ATK: '40'
+    DEF: '100'
+    Rarity: Ultra-Rare
+    Details: Very Rare Electric Pokemon
+  defaults:
+  - Charmander
+  - Pidgey
+  - Seel

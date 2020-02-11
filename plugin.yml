@@ -1,0 +1,43 @@
+name: TradingCards
+author: Travja
+version: 1.0.6
+main: me.Travja.TradingCards.Main
+prefix: TC
+commands:
+  TC:
+    description: Command for TradingCards
+    aliases: [tradingcards, tcards]
+    usage: Use /TC help for info
+permissions:
+  tradingcards.*:
+    description: Gives full access to trading cards
+    default: op
+    children:
+      tradingcards.reward: true
+      tradingcards.give: true
+      tradingcards.giveaway: true
+      tradingcards.create: true
+      tradingcards.rename: true
+      tradingcards.delete: true
+      tradingcards.reload: true
+  tradingcards.reward:
+    description: Gives ability to get card every x hours
+    default: true
+  tradingcards.give:
+    description: Gives ability to use /tc give <name>
+    default: op
+  tradingcards.giveaway:
+    description: Grants access to /tc giveaway
+    default: op
+  tradingcards.create:
+    description: Grants access to /tc create
+    default: op
+  tradingcards.rename:
+    description: Grants access to /tc rename and /tc edit
+    default: op
+  tradingcards.delete:
+    description: Grants access to /tc delete
+    default: op
+  tradingcards.reload:
+    description: Grants access to /tc reload
+    default: op
